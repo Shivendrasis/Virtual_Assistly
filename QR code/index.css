@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+   
+   height: 30rem;
+   width: 20rem;
+   border: 2px solid black;
+   margin: 6rem;
+   background-color: rgb(59, 148, 123);
+   border-radius: 5px;
+
+}
+
+#qr-header h2{
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+  
+    
+}
+
+#qr-header input{
+    text-align: center;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    width: 14rem;
+    padding: 5px;
+  
+}
+
+#qr-center{
+    margin-left: 3.5rem;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
+select{
+    background-color: blue;
+    color: white;
+}
+
+
+#qr-footer{
+    text-align: center;
+    margin-top: 12rem;
+    
+}
+
+#qr-footer a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+    background-color: blue;
+    color: aliceblue;
+}
