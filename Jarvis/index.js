@@ -6,6 +6,8 @@ const content = document.querySelector('.content')
 function speak(text) {
     const voice = new SpeechSynthesisUtterance(text);
 
+    //hiii git
+
     voice.rate = 1;
     voice.volume = 1;
     voice.pitch = 2;
