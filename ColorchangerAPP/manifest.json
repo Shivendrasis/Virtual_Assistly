@@ -1,0 +1,23 @@
+{
+    "name": "Color picker",
+    "version": "0.1.21",
+    "manifest_version": 3,
+    "description":"color picker tool that allows you to select color values.",
+    "author":"Shivendra sisodia",
+    "action": {
+        "default_popup":"index.html",
+        "default_icon": "logo.png"
+    },
+    "background":{
+        "service_worker":"index.js"
+},
+    "icons": {
+        "64":"logo.png"
+    },
+    "permissions":["activeTab"]
+        
+
+
+
+
+}
