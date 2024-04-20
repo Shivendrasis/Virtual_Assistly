@@ -2,17 +2,15 @@
 const btn = document.querySelector('.talk')
 const content = document.querySelector('.content')
 
-//interface representing a speech request 
+//!interface representing a speech request 
 function speak(text) {
     const voice = new SpeechSynthesisUtterance(text);
-
-    //hiii gitbigi
 
     voice.rate = 1;
     voice.volume = 1;
     voice.pitch = 2;
    
-    //converting text into spoken audio
+    //!converting text into spoken audio
     window.speechSynthesis.speak(voice);
 }
 
@@ -40,18 +38,18 @@ window.addEventListener('load', () => {
 });
 
 
-// convert spoken language into text ---- provide speech recognition capabilities 
+//! convert spoken language into text ---- provide speech recognition capabilities 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-// Create a SpeechRecognition object
+//! Create a SpeechRecognition object
 const recognition = new SpeechRecognition();
 
-// Define the onresult event handler
+//! Define the onresult event handler
 recognition.onresult = (event) => {
 
     const currentIndex = event.resultIndex;
 
-    // Retrieve the transcript of the recognized speech
+    //! Retrieve the transcript of the recognized speech
     const transcript = event.results[currentIndex][0].transcript;
     content.textContent = transcript;
     takeCommand(transcript.toLowerCase());
@@ -64,7 +62,7 @@ btn.addEventListener('click', () => {
 })
 
 
-//here all the commands of jarvis
+//! here all the commands of jarvis
 function takeCommand(message) {
 
     if (message.includes('hi') || message.includes('hello')) {
@@ -110,7 +108,7 @@ function takeCommand(message) {
 
 
     else if (message.includes('play') || message.includes('on spotify')) {
-        window.open(`https://spotify.com/music/search?q=${message.replace(" ", "+")}`, "_blank");
+        window.open(`https://www.spotify.com/music/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on internet regarding " + message;
         speak(finalText);
 

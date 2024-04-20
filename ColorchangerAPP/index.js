@@ -4,13 +4,13 @@ console.log(buttons)
 
 //hex color picker
 const randomcolor = () => {
-    let val = "0123456789ABCDEF"   
+    let val = "0123456789ABCDEF"
     let cons = "#";
 
     for (let i = 0; i < 6; i++) {
 
         //Math.random function
-        cons = cons + val[Math.floor(Math.random() * 16)];  
+        cons = cons + val[Math.floor(Math.random() * 16)];
     }
     console.log(cons);
 
@@ -18,6 +18,7 @@ const randomcolor = () => {
     let output = document.getElementById("box");
     output.textContent = cons;
     console.log(output)
+
     //append child
     document.body.appendChild(output)
 
