@@ -86,9 +86,10 @@ function takeCommand(message) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...")
     }
-    else if (message.includes("open spotify")) {
-        window.open("https://spotify.com", "_ blank");
-        speak("opening spotify")
+    else if (message.includes("open spotify") || message.includes('on spotify')) {
+        window.open(`https://www.spotify.com/search?q=${message.replace(" ", "+")}`, "_blank");
+        const finalText = "This is what i found on spotify regarding " + message;
+        speak(finalText)
     }
 
     else if (message.includes('on youtube') || message.includes('search')) {

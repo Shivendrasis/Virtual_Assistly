@@ -5,9 +5,13 @@
   font-family: sans-serif;
 
 }
+main{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 body {
-
   background-image: url(./stoepsorama.gif);
   background-color: black;
   background-repeat: no-repeat;
@@ -20,6 +24,8 @@ body {
   margin-top: 25rem;
 
 }
+
+
 
 
 #hd1 {
@@ -36,18 +42,17 @@ p {
   align-items: center;
   color: rgba(194, 203, 211, 0.693);
   margin-bottom: 1rem;
- 
+ font-size: 1rem;
 }
 
 .input {
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: 2rem;
   width: 20rem;
-  margin-left: 1rem;
+  margin-left: 30px;
   border: 1px solid;
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
@@ -58,7 +63,7 @@ p {
 .talk {
   height: 15px;
   width: 15px;
-  margin: 15px;
+  margin: 12px;
   cursor: pointer;
 
 
@@ -66,7 +71,32 @@ p {
 
 .content {
   font-size: 1rem;
+  justify-content: center;
   text-align: center;
   font-weight: 1;
   color: rgb(222, 223, 224);
+}
+
+@media  (max-width: 600px) {
+
+  #hd1{
+     font-size: 20px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: #0ff;
+  }
+
+  p{
+     font-size: 13px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .input{
+    width: 220px;
+  }
+
+  body{
+    background-position: center;
+    background-size: 100%;
+  }
+  
 }
