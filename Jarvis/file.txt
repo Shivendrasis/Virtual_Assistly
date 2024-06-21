@@ -1,0 +1,13 @@
+.main 
+Assistly
+I'm a Virtual Assistant Assistly , How may i help you?
+
+.input
+ Click to speak
+
+
+./index.css
+Style css
+
+./index.js
+Vanilla js
